@@ -23,6 +23,8 @@ $blue: #0243b3;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 h1{
   font-family: 'Rubik Mono One', sans-serif;
@@ -34,7 +36,7 @@ h2{
   font-size: 1.8em;
 }
 
-p{
+p, li{
   font-family: 'Rubik', sans-serif;
 }
 
