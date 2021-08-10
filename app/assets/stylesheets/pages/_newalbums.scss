@@ -1,0 +1,37 @@
+$grey: #6CFF6C; 
+$blue: #0243b3;
+
+#new-album{
+  padding: 50px;
+}
+
+#submit-album{
+  border: none;
+  padding: 15px;
+  background-color: $blue;
+  color: white;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: larger;
+}
+
+
+input:not(#submit-album, #file-input){
+  height: 40px;
+  border: 2px solid $grey;
+  padding: 5px;
+  &::placeholder{
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+#album_date{
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+#file-upload-button, ::-webkit-file-upload-button{
+  height: 40px;
+  border: 2px solid $grey;
+  padding: 5px;
+  background-color: white;
+}

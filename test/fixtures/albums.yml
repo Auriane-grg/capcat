@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  date: 2021-08-10
+  description: MyString
+  deezer: MyString
+  spotify: MyString
+  youtube: MyString
+  amuse: MyString
+
+two:
+  name: MyString
+  date: 2021-08-10
+  description: MyString
+  deezer: MyString
+  spotify: MyString
+  youtube: MyString
+  amuse: MyString
