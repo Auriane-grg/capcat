@@ -1,9 +1,9 @@
-const spaceSection = () => {
+const spaceHome = () => {
     const canvas = document.getElementById('canvas-capcat');
     const capcat = document.querySelector('.left-capcat');
     const description = document.querySelector('.description');
 
-    if (!canvas) { return }; 
+    if (!capcat) { return }; 
 
     const heightWanted = description.clientHeight;
     const widthWanted = description.clientWidth;
@@ -97,4 +97,4 @@ const spaceSection = () => {
   
   
 
-export { spaceSection }
+export { spaceHome }

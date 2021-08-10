@@ -17,7 +17,7 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 // import { spaceBackground } from '../plugins/space_background';
-import { spaceSection } from '../plugins/space_section';
+import { spaceHome } from '../plugins/space_home';
 import { sliderHome } from '../plugins/slider_home';
 import { instaSection } from '../plugins/insta_section';
 import { navbar } from '../plugins/navbar';
@@ -28,6 +28,6 @@ document.addEventListener('turbolinks:load', () => {
   // spaceBackground();
   sliderHome();
   instaSection();
-  spaceSection();
+  spaceHome();
   navbar();
 });
