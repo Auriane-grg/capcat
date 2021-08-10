@@ -1,2 +1,112 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="home-header">
+
+  <div class="carroussel-item active">
+
+    <div class="left-header">
+      <h1>Cap<span class='grey'>.</span>cat</h1>
+      <h2>Nouveau : <span class="border-title">Feeling like a city in a big rat</span></h2>
+      <%= cl_image_tag ("3_owo53c") %>
+    </div>
+
+    <div class="right-header">
+      <%# <%= cl_image_tag ("logo_bleu_xdktkw"), class: 'right-img' %>
+      
+      <%= cl_image_tag ("feeling_like_a_city_bklesf") %>
+      <p>L'antonyme de feeling like a rat et son calme ambiant déboule pour nous faire tapper du pied en août ! ⚡</p>
+      <p class="btn">Découvrir ></p>
+    </div>
+
+  </div>
+
+  <div class="carroussel-item">
+
+    <div class="left-header">
+      <h1>Cap<span class='grey'>.</span>cat</h1>
+      <h2>L'album <span class="border-title">SUN7K7</span></h2>
+      <%= cl_image_tag ("2_awdgfg") %>
+    </div> 
+
+    <div class="right-header">
+      <%= cl_image_tag ("3_r5sch3") %>
+      <p>7 titres pour se laver les oreilles avec du bon soin qui motive !</p>
+      <p class="btn">Découvrir ></p>
+    </div>
+
+  </div>
+
+</div>
+
+<%# <div class="canva">
+<canvas id="canvas-section-green"></canvas>
+</div> %>
+
+<div class="music nonav">
+ <iframe src="https://open.spotify.com/embed/artist/7wRVohawGTBOr0KGEK4ZoB?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+
+
+<div class="about">
+  <div class="left-capcat">
+    <canvas id="canvas-capcat"></canvas>
+    <%= cl_image_tag "capcat-blue_evrxsj" %>
+  </div>
+
+  <div class="description">
+    <h2>Can you dig it ?</h2>
+    <p>If you're here then you know.</p><br>
+    <p>I'm <span class='border-title' style="font-family: 'Rubik Mono One', sans-serif; font-size: 1.8em">cap.cat</span>, known by many names but, well, unknown.</p>
+    <p>I am passionate about old and new way of <strong>making music, piano</strong> (got a crumar seven for live playing with the crew, and i sample it alot), <strong>photography and painting</strong>.</p>
+    <p>Influenced by 90's techno and hiphop, I only want to chill and shudder while making and listening to music.</p>
+    <p>I’m working my ass off during the day in Engineering so I can be trully free when it comes to producing independant music.</p>
+    <p>Support me, listen to my projects, it’s the only marketing I got !</p>
+    <br>
+    <%= link_to "écoute mes sons >", pages_contact_path, class:'btn' %>
+  </div>
+
+</div>
+
+<div class="insta">
+  <h2>Tout dans la pochette</h2>
+  <p>Jette un coup d'oeil à mon <a href="https://www.instagram.com/cap.cat.tdlp/" class="link" target="blank">insta</a> pour bien t'en rendre compte !</p>
+  <div class="swiper-container">
+    
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <%= cl_image_tag "clear_it_up_tjqiwa" %>
+      </div>
+
+      <div class="swiper-slide">
+        <%= cl_image_tag "outside_xufmv5" %>
+      </div>
+
+      <div class="swiper-slide">
+        <%= cl_image_tag "promenade_j9mqtn" %>
+      </div>
+
+      <div class="swiper-slide">
+        <%= cl_image_tag "duke_mujjnq" %>
+      </div>
+
+      <div class="swiper-slide">
+        <%= cl_image_tag "jazzup_eb6xzn" %>
+      </div>
+
+      <div class="swiper-slide">
+        <%= cl_image_tag "dastyle_k6rnmo" %>
+      </div>
+    </div>
+
+    <!-- If we need pagination -->
+    <!--       <div class="swiper-pagination"></div> -->
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+
+
