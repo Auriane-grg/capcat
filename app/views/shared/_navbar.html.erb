@@ -1,0 +1,14 @@
+
+<div id="nav">
+  <div class="logo">
+    <%= link_to pages_home_path do %>
+      <%= cl_image_tag("capcat_jjelfl", width: 50, height: 80, crop: :fill) %>
+    <% end %> 
+  </div>
+
+  <div class="nav-right">  
+    <%# <%= link_to "projets", cocktail_path(cocktail)  %>
+    <p class = 'nav-link'>projets</p>
+    <%= link_to "contact", pages_contact_path, class:'nav-link' %>
+  </div>
+</div>

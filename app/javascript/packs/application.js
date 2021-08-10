@@ -20,7 +20,7 @@ require("channels")
 import { spaceSection } from '../plugins/space_section';
 import { sliderHome } from '../plugins/slider_home';
 import { instaSection } from '../plugins/insta_section';
-// import { navbar } from '../plugins/navbar';
+import { navbar } from '../plugins/navbar';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -29,5 +29,5 @@ document.addEventListener('turbolinks:load', () => {
   sliderHome();
   instaSection();
   spaceSection();
-  // navbar();
+  navbar();
 });
