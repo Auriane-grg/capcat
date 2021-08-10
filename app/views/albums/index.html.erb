@@ -1,2 +1,25 @@
-<h1>Albums#index</h1>
-<p>Find me in app/views/albums/index.html.erb</p>
+<div id="album-index">
+  <h1>Mes albums </h1>
+  <p>Pour chacun de mes projets :</p>
+  <ul>
+  <li><i class="fas fa-vial"></i> Je t'explique un peu leur univers</li>
+  <li><i class="fas fa-camera-retro"></i> Tu peux découvrir les visuels qu'on s'est amusé à créer, mes contemporains et moi</li>
+  <li><i class="fas fa-headphones-alt"></i> Tu retrouves tous les liens des plateformes de streaming pour écouter mes sons : spotify, deezer, youtube...</li>
+  </ul>
+  <p>Enjoy !</p>
+  <div id="album-list">
+    <% @albums.each do |album| %>
+    <%= link_to albums_path(album) do %>
+    <div class="album-card">
+      <%= cl_image_tag album.pochette.key %>
+      <h2 class="link"><%= album.name %> > </h2>
+    </div>
+    <% end %>
+  <% end %>
+  </div>
+
+  <div class="music nonav">
+ <iframe src="https://open.spotify.com/embed/artist/7wRVohawGTBOr0KGEK4ZoB?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+
+</div>
