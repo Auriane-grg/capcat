@@ -21,6 +21,7 @@ import { spaceHome } from '../plugins/space_home';
 import { sliderHome } from '../plugins/slider_home';
 import { instaSection } from '../plugins/insta_section';
 import { navbar } from '../plugins/navbar';
+import { spaceIndex } from '../plugins/space_index'
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
@@ -30,4 +31,5 @@ document.addEventListener('turbolinks:load', () => {
   instaSection();
   spaceHome();
   navbar();
+  spaceIndex();
 });

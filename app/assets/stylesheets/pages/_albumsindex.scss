@@ -22,7 +22,11 @@ $blue: #0243b3;
  #album-list{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 50px;
+  column-gap: 50px;
+  padding: 50px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
   a{
     text-decoration: none;
   }
@@ -30,6 +34,23 @@ $blue: #0243b3;
 
 .album-card{
   img{
-    width: 100%;
+    width:100%;
   }
+  h2{
+    font-size: 1.5em;
+  }
+  background-color: white;
+  padding: 50px;
+  border: 2px solid black;
+  height: 400px;
+}
+
+#list-container{
+  position: relative;
+}
+
+.canvas-capcat{
+  position: absolute;
+  top: 0;
+  z-index: 0;
 }
