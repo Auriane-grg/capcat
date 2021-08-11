@@ -12,7 +12,7 @@
     <canvas id="canvas-capcat"></canvas>
     <div id="album-list">
       <% @albums.each do |album| %>
-      <%= link_to albums_path(album) do %>
+      <%= link_to album_path(album) do %>
       <div class="album-card">
         <%= cl_image_tag album.pochette.key %>
         <h2 class="link"><%= album.name %> > </h2>

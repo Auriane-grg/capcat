@@ -32,7 +32,7 @@ class AlbumsController < ApplicationController
   private
 
   def album_params
-    params.require(:album).permit(:name, :pochette, :date, :description, :deezer, :spotify, :youtube, :amuse)
+    params.require(:album).permit(:name, :date, :description, :deezer, :spotify, :youtube, :amuse, :player, :pochette, images:[])
   end
 
 end

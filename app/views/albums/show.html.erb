@@ -1,2 +1,67 @@
-<h1>Albums#show</h1>
-<p>Find me in app/views/albums/show.html.erb</p>
+
+<div class="home-header">
+
+  <div class="carroussel-item active">
+
+    <div class="left-header">
+      <h1><%= @album.name %></h1>
+      <%= cl_image_tag @album.images.first.key %>
+    </div>
+
+    <div class="right-header">
+      <%# <%= cl_image_tag ("logo_bleu_xdktkw"), class: 'right-img' %>
+      
+      <%= cl_image_tag @album.pochette.key %>
+      <p><%= @album.description %></p>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="players">
+<div class="all-players">
+
+<h2>Stream <%= @album.name %> sur ta plateform pref :</h2>
+<ul>
+  <li><i class="fab fa-spotify"></i><a class="link" href="<%= @album.spotify %>"> Spotify ></a></li>
+  <li><i class="fas fa-signal"></i><a class="link" href="<%= @album.deezer %>"> Deezer ></a></li>
+  <li><i class="fab fa-youtube"></i><a class="link" href="<%= @album.youtube %>"> Youtube ></a></li>
+  <li><a class="link" href="<%= @album.amuse %>"> Par ici pour les autres ... ></a></li>
+</ul>
+
+</div>
+
+  <div class="spotify-player">
+    <%= raw @album.player %>
+  </div>
+
+</div>
+
+
+<div class="insta">
+  <h2>Univers <i class="far fa-eye"></i> de <%= @album.name %></h2>
+  <p>Retrouve toutes mes illustrations mon <a href="https://www.instagram.com/cap.cat.tdlp/" class="link" target="blank">insta</a></p>
+  <div class="swiper-container">
+    
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <% @album.images.each do |illu| %>
+      <div class="swiper-slide">
+        <%= cl_image_tag illu.key %>
+      </div>
+      <% end %>
+    </div>
+
+    <!-- If we need pagination -->
+    <!--       <div class="swiper-pagination"></div> -->
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+
+

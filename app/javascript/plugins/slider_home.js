@@ -3,7 +3,7 @@ const sliderHome = () => {
   const slides = document.querySelectorAll('.carroussel-item');
   let index = 0;
 
-  if (slides.length === 0) { return };
+  if (slides.length < 2) { return };
 
   setInterval(function(){
     if(index < 1){

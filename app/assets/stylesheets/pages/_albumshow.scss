@@ -1,0 +1,20 @@
+.players{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.all-players{
+  padding: 50px;
+  i{
+    margin-right: 10px;
+    font-size: larger;
+    vertical-align: middle;
+  }
+  ul{
+    list-style-type: none;
+    
+  }
+  li{
+    margin-bottom: 10px;
+  }
+}

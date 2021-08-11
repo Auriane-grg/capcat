@@ -67,7 +67,7 @@ const spaceHome = () => {
   
     function animation(){
         requestAnimationFrame(animation);
-        ctx.clearRect(0,0,window.innerWidth, window.innerHeight);
+        ctx.clearRect(0,0,window.innerWidth, heightWanted);
   
         for(let i = 0; i < particuleTab.length; i++){
             particuleTab[i].MAJ();

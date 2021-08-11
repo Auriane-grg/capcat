@@ -1,2 +1,24 @@
-<h1>Albums#edit</h1>
-<p>Find me in app/views/albums/edit.html.erb</p>
+<div id="new-album">
+  <h1>Ajouter un nouvel album :</h1>
+
+  <%= form_for @album do |f| %>
+    <%= f.text_field :name, placeholder:"Nom" %>
+    <%= f.date_field :date %>
+    <br><br>
+    <%= f.text_field :spotify, placeholder:"Lien spotify" %>
+    <%= f.text_field :deezer, placeholder:"Lien deezer" %>
+    <%= f.text_field :youtube, placeholder:"Lien youtube" %>
+    <%= f.text_field :amuse, placeholder:"Lien amuse" %>
+    <br><br>
+    <%= f.text_field :description, placeholder:"Description", style:"width: 100%; height: 200px;" %>
+    <br><br>
+    <%= f.text_field :player, placeholder:"Player", style:"width: 100%; height: 200px;" %>
+    <br><br>
+    <%= f.file_field :pochette, as: :file, id:"file-input" %>
+    <br><br>
+    <%= f.file_field :images, as: :file, id:"file-input", multiple: "true" %>
+    <br><br>
+    <%= f.submit value: "MODIFIER L'ALBUM", id:"submit-album" %>
+  <% end %>
+</div>
+

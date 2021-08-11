@@ -12,7 +12,11 @@
     <br><br>
     <%= f.text_field :description, placeholder:"Description", style:"width: 100%; height: 200px;" %>
     <br><br>
-    <%= f.file_field :pochette, as: :file, id:"file-input"%>
+    <%= f.text_field :player, placeholder:"Player", style:"width: 100%; height: 200px;" %>
+    <br><br>
+    <%= f.file_field :pochette, as: :file, id:"file-input" %>
+    <br><br>
+    <%= f.file_field :images, as: :file, id:"file-input", multiple: "true" %>
     <br><br>
     <%= f.submit value: "AJOUTER L'ALBUM", id:"submit-album" %>
   <% end %>
