@@ -232,13 +232,14 @@
   .home-header{
     // position: relative;
     height: 750px;
+    padding: 0px;
   
     .carroussel-item{
       opacity: 0;
       display: block;
       // grid-template-columns: 1fr 1fr;
       position: absolute;
-      top: 50px;
+      top: 0px;
       padding: 10px;
     }
 
