@@ -1,0 +1,46 @@
+$grey: #6CFF6C; 
+$blue: #0243b3;
+
+
+@media screen and (min-width: 800px) {
+  #contact{
+    padding: 50px;
+    i{
+      margin-right: 10px;
+      font-size: 1.8em;
+      vertical-align: middle;
+      background-color: $grey;
+      padding: 10px;
+      border-radius: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #contact{
+    padding: 50px;
+    i{
+      margin-right: 10px;
+      font-size: 1.8em;
+      vertical-align: middle;
+      background-color: $grey;
+      padding: 10px;
+      border-radius: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #contact{
+    padding: 10px;
+    i{
+      margin-right: 10px;
+      font-size: 1.8em;
+      vertical-align: middle;
+      background-color: $grey;
+      padding: 10px;
+      border-radius: 50px;
+    }
+  }
+}
+
