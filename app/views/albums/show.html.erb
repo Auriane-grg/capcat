@@ -8,7 +8,11 @@
 
       <div class="left-header">
         <h1><%= @album.name %></h1>
+        <% if @album.videos != [] %>
+          <%= cl_video_tag @album.videos.first.key, autoplay: true, muted: true, loop: true, class:'not-mobile'%>
+          <% else %>
         <%= cl_image_tag @album.images.first.key, class:'not-mobile'%>
+        <% end %>
       </div>
 
       <div class="right-header">
@@ -16,10 +20,11 @@
         
         <%= cl_image_tag @album.pochette.key %>
         <p><%= @album.description %></p>
+        <%= cl_video_tag @album.videos.first.key, autoplay: true, controls: true, muted: true, loop: true, class:'not-desktop'%>
       </div>
 
     </div>
-
+  
   </div>
 
   <div class="players">
@@ -68,3 +73,4 @@
 </div>
 
 
+<%# <%= cl_video_tag @album.videos.first.key, autoplay: true, controls: true, muted: true, class:'not-mobile'%>

@@ -96,3 +96,10 @@ body{
   }
   cursor:pointer;
 }
+
+
+@media screen and (min-width: 700px) {
+.not-desktop{
+  display: none;
+}
+}

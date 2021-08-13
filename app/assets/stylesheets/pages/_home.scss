@@ -29,7 +29,7 @@
       text-align: right;
       justify-content: right;
   
-      img{
+      img, video{
         width: 50%;
       }
   
@@ -120,7 +120,7 @@
   .home-header{
     padding: 50px;
     position: relative;
-    height: 500px;
+    height: 600px;
   
     .carroussel-item{
       opacity: 0;
@@ -138,6 +138,9 @@
       img{
             height:300px;
       }
+      p{
+        padding-right: 50px;
+      }
     }
   
     .left-header{
@@ -145,8 +148,8 @@
       text-align: right;
       justify-content: right;
   
-      img{
-        width: 50%;
+      img, video{
+        width: 70%;
       }
   
   

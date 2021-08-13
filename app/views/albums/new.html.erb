@@ -17,6 +17,8 @@
     <%= f.file_field :pochette, as: :file, id:"file-input" %>
     <br><br>
     <%= f.file_field :images, as: :file, id:"file-input", multiple: "true" %>
+        <br><br>
+    <%= f.file_field :videos, as: :file, id:"file-input", multiple: "true" %>
     <br><br>
     <%= f.submit value: "AJOUTER L'ALBUM", id:"submit-album" %>
   <% end %>
