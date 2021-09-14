@@ -11,6 +11,12 @@ class AlbumPolicy < ApplicationPolicy
     # true
   end
 
+  def update?
+    user.admin === true
+    # true
+  end
+
+
   def show?
     true
   end
