@@ -39,10 +39,13 @@
   
   
   .insta{
-    padding: 50px;
     margin-top: 100px;
     margin-bottom: 90px;
     width: 100%;
+
+    h2, p {
+      padding: 50px;
+    }
   
     .swiper-slide img {
       transition: box-shadow 0.25s;
@@ -164,10 +167,13 @@
   
   
   .insta{
-    padding: 10px;
     margin-top: 100px;
     margin-bottom: 90px;
     width: 100%;
+
+    h2, p {
+      padding: 10px;
+    }
   
     .swiper-slide img {
       transition: box-shadow 0.25s;
@@ -285,10 +291,14 @@
   
   
   .insta{
-    padding: 10px;
+
     margin-top: 100px;
     margin-bottom: 90px;
     width: 100%;
+
+    h2, p {
+      padding: 10px;
+    }
   
     .swiper-slide img {
       transition: box-shadow 0.25s;
