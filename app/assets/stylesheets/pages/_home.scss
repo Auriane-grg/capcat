@@ -64,14 +64,17 @@
     
     .swiper-button-next, .swiper-button-prev{
       color: white!important;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.1);
       padding: 10px 20px;
       border: none;
       border-radius: 50px;
+      position: absolute;
     }
 
     .swiper-container {
       overflow: hidden;
+      position: relative;
+      margin: 0px 50px;
   }
 
   }
@@ -196,9 +199,11 @@
       padding: 10px 20px;
       border: none;
       border-radius: 50px;
+      position: absolute;
     }
     .swiper-container {
       overflow: hidden;
+      position: relative;
   }
   }
   
@@ -321,9 +326,12 @@
       padding: 10px 20px;
       border: none;
       border-radius: 50px;
+      position: absolute;
     }
     .swiper-container {
       overflow: hidden;
+      position: relative;
+      
   }
   }
   
