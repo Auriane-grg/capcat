@@ -22,5 +22,10 @@
     <br><br>
     <%= f.submit value: "AJOUTER L'ALBUM", id:"submit-album" %>
   <% end %>
+
+    <%= link_to destroy_user_session_path, method: :delete do %>
+      <i class="fas fa-user"></i><p>Log out</p>
+    <% end %>
+
 </div>
 

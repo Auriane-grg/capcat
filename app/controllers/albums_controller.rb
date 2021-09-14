@@ -1,6 +1,13 @@
 class AlbumsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index, :show]
+  # include Pundit
+  # after_action :verify_authorized, except: :index, unless: :skip_pundit?
+	# after_action :verify_policy_scoped, only: :index, unless: :skip_pundit?
+
+
   def new
     @album = Album.new
+    authorize @album
   end
 
   def create
@@ -11,10 +18,12 @@ class AlbumsController < ApplicationController
 
   def show
     @album = Album.find(params[:id])
+    authorize @album
   end
 
   def index
-    @albums = Album.all
+    # @albums = Album.all
+    @albums = policy_scope(Album)
   end
 
   def edit
@@ -34,5 +43,6 @@ class AlbumsController < ApplicationController
   def album_params
     params.require(:album).permit(:name, :date, :description, :deezer, :spotify, :youtube, :amuse, :player, :pochette, images:[], videos:[])
   end
+	
 
 end
