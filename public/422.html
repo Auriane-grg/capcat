@@ -3,65 +3,99 @@
 <head>
   <title>The change you wanted was rejected (422)</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
-  .rails-default-error-page {
-    background-color: #EFEFEF;
-    color: #2E2F30;
-    text-align: center;
-    font-family: arial, sans-serif;
-    margin: 0;
-  }
+    h1{
+        font-family: 'Rubik Mono One', sans-serif;
+        font-size: 3em;
+    }
 
-  .rails-default-error-page div.dialog {
-    width: 95%;
-    max-width: 33em;
-    margin: 4em auto 0;
-  }
+    p, li, a{
+      font-family: 'Rubik', sans-serif;
+      font-size: 16px;
+    }
 
-  .rails-default-error-page div.dialog > div {
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
+    h2{
+      font-family: 'Rubik Mono One', sans-serif;
+      font-size: 1.8em;
+    }
 
-  .rails-default-error-page h1 {
-    font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
-  }
+    .link{
+      background-image: linear-gradient(120deg, #c8fcdc 0%, #6CFF6C 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 50%;
+      background-position: 0 88%;
+      transition: background-size 0.25s ease-in;
+      color: black;
+      text-decoration: none;
+      width: fit-content;
+      text-align: right;
+      display: inline-flex;
+      font-weight: bold;
+      cursor:pointer;
+    }
 
-  .rails-default-error-page div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color: #F7F7F7;
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
+    .link:hover{
+      background-size: 100% 88%;
+      cursor:pointer;
+    }
+
+    .dialog{
+      text-align: center;
+    }
+
+    #nav{
+      width: 100%;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      display: flex;
+      background-color: white;
+      z-index: 10;
+    }
+    .nav-right{
+      display: flex;
+      align-items: center;
+    }
+    .nav-link{
+      font-family: 'Rubik Mono One', sans-serif;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 1.2em;
+      background-image: linear-gradient(120deg, #c8fcdc 0%, #6CFF6C 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 0.4em;
+      background-position: 0 88%;
+      transition: background-size 0.25s ease-in;
+      color: black;
+      text-decoration: none;
+    }
+    .nav-link:hover {
+      background-size: 100% 88%;
+    }
+
+
   </style>
 </head>
 
 <body class="rails-default-error-page">
   <!-- This file lives in public/422.html -->
   <div class="dialog">
-    <div>
-      <h1>The change you wanted was rejected.</h1>
-      <p>Maybe you tried to change something you didn't have access to.</p>
+    <div id="nav">
+      <div class="logo">
+        <a href="/" class="link"> <img src="http://res.cloudinary.com/ddw7wju1q/image/upload/c_fill,h_80,w_50/capcat_jjelfl"></a>
+      </div>
+      <div class="nav-right">  
+        <a href = "/albums" class='nav-link'>Albums</a>
+        <a href = "/pages/contact" class='nav-link'>Contact</a>
+      </div>
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
+      <h1>Oupsi</h1>
+      <h2>Il y a eu un couac...</h2>
+      <img src="https://media3.giphy.com/media/lrEHX7Ty5OYasbpSAR/giphy.gif" alt=""> 
+      <p>Retourne sur la <a href="/" class="link"> page d'accueil</a></p>
+      
   </div>
 </body>
 </html>
