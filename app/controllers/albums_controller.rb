@@ -28,6 +28,7 @@ class AlbumsController < ApplicationController
 
   def edit
     @album = Album.find(params[:id])
+    authorize @album
   end
 
 
