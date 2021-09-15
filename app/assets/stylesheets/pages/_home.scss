@@ -21,6 +21,7 @@
     .right-header{
       img{
             height:300px;
+            object-fit: cover ;
       }
     }
   
@@ -149,6 +150,7 @@
     .right-header{
       img{
             height:300px;
+            object-fit: cover ;
       }
       p{
         padding-right: 50px;
@@ -278,6 +280,8 @@
     .right-header{
       img{
             width:100%;
+            object-fit: cover ;
+            height: 100%;
       }
     }
   
