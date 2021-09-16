@@ -57,12 +57,23 @@
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <% @album.images.each do |illu| %>
-        <div class="swiper-slide">
-          <%= cl_image_tag illu.key %>
-        </div>
+
+
+         
+
+
+        <% @album.videos.each do |illu| %> 
+          <div class="swiper-slide">
+          <%= cl_video_tag illu.key, autoplay: true, controls: true, muted: true, loop: true %> 
+        </div> 
         <% end %>
       </div>
+
+              <% @album.images.each do |illu| %> 
+          <div class="swiper-slide">
+          <%= cl_image_tag illu.key %> 
+        </div> 
+        <% end %>
 
       <!-- If we need pagination -->
       <!--       <div class="swiper-pagination"></div> -->
