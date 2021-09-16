@@ -1,18 +1,18 @@
 
 <div class="home-header">
-<div class="swiper-button-prev"></div>
+  <div class="swiper-button-prev"></div>
   <div class="carroussel-item active">
     
     <div class="left-header">
-      <h1>Cap<span class='grey'>.</span>cat</h1>
+      <h1 class="reveal">Cap<span class='grey'>.</span>cat</h1>
       <h2>Nouveau : <span class="border-title">Feeling like a city in a big rat</span></h2>
-      <%= cl_image_tag ("3_owo53c"), class:'not-mobile'%>
+      <%= cl_image_tag ("3_owo53c"), class:'not-mobile reveal'%>
     </div>
 
     <div class="right-header">
-      <%= cl_image_tag ("feeling_like_a_city_bklesf") %>
+      <%= cl_image_tag ("feeling_like_a_city_bklesf") , class:"reveal"%>
       <p>L'antonyme de feeling like a rat et son calme ambiant déboule pour nous faire tapper du pied en août ! ⚡</p>
-      <p class="btn">Découvrir ></p>
+      <p class="btn reveal">Découvrir ></p>
     </div>
 
 
@@ -62,14 +62,14 @@
 <canvas id="canvas-section-green"></canvas>
 </div> %>
 
-<div class="about">
+<div class="about reveal ">
   <div class="left-capcat">
     <canvas id="canvas-capcat"></canvas>
-    <%= cl_image_tag "capcat-blue_evrxsj" %>
+    <%= cl_image_tag "capcat-blue_evrxsj", class:' reveal' %>
   </div>
 
   <div class="description">
-    <h2>Can you dig it ?</h2>
+    <h2 class="reveal">Can you dig it ?</h2>
     <p>If you're here then you know.</p><br>
     <p>I'm <span class='border-title' style="font-family: 'Rubik Mono One', sans-serif; font-size: 1.8em">cap.cat</span>, known by many names but, well, unknown.</p>
     <p>I am passionate about old and new way of <strong>making music, piano</strong> (got a crumar seven for live playing with the crew, and i sample it alot), <strong>photography and painting</strong>.</p>
@@ -77,14 +77,14 @@
     <p>I’m working my ass off during the day in Engineering so I can be trully free when it comes to producing independant music.</p>
     <p>Support me, listen to my projects, it’s the only marketing I got !</p>
     <br>
-    <%= link_to "écoute mes sons >", albums_path, class:'btn' %>
+    <%= link_to "écoute mes sons >", albums_path, class:'btn reveal' %>
   </div>
 
 </div>
 
 
 <div class="insta">
-  <h2>Tout dans la pochette</h2>
+  <h2 class="reveal">Tout dans la pochette</h2>
   <p>Jette un coup d'oeil à mon <a href="https://www.instagram.com/cap.cat.tdlp/" class="link" target="blank">insta</a> pour bien t'en rendre compte !</p>
   <div class="swiper-container">
     
