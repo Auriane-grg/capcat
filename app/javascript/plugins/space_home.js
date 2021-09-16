@@ -76,7 +76,7 @@ const spaceHome = () => {
   
     init();
     animation();
-    console.log(particuleTab)
+    // console.log(particuleTab)
   
   
     function resize(){
