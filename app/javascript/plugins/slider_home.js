@@ -42,17 +42,23 @@ const sliderHome = () => {
     }
 
   }
+  
+  let SlideTimer; 
 
-setInterval(changeSlideRight, 5000);
+  SlideTimer = setInterval(changeSlideRight, 5000);
 
 
 
   leftBtn.addEventListener('click', () => {
     changeSlideLeft();
+    clearInterval(SlideTimer);
+    SlideTimer = setInterval(changeSlideRight, 5000);
   });
 
   rightBtn.addEventListener('click', () => {
     changeSlideRight();
+    clearInterval(SlideTimer);
+    SlideTimer = setInterval(changeSlideRight, 5000);
   });
 
 
