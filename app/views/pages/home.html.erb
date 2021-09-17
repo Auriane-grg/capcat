@@ -83,47 +83,8 @@
 </div>
 
 
-<div class="insta">
-  <h2 class="reveal">Tout dans la pochette</h2>
-  <p class="reveal">Jette un coup d'oeil à mon <a href="https://www.instagram.com/cap.cat.tdlp/" class="link" target="blank">insta</a> pour bien t'en rendre compte !</p>
-  <div class="swiper-container">
-    
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <%= cl_image_tag "clear_it_up_tjqiwa" %>
-      </div>
 
-      <div class="swiper-slide">
-        <%= cl_image_tag "outside_xufmv5" %>
-      </div>
-
-      <div class="swiper-slide">
-        <%= cl_image_tag "promenade_j9mqtn" %>
-      </div>
-
-      <div class="swiper-slide">
-        <%= cl_image_tag "duke_mujjnq" %>
-      </div>
-
-      <div class="swiper-slide">
-        <%= cl_image_tag "jazzup_eb6xzn" %>
-      </div>
-
-      <div class="swiper-slide">
-        <%= cl_image_tag "dastyle_k6rnmo" %>
-      </div>
-    </div>
-
-    <!-- If we need pagination -->
-    <!--       <div class="swiper-pagination"></div> -->
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
-</div> 
+<%= render 'instagrams/swiper-insta' %>
 
 <div class="music nonav">
  <iframe src="https://open.spotify.com/embed/artist/7wRVohawGTBOr0KGEK4ZoB?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>

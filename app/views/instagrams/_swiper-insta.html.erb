@@ -1,0 +1,29 @@
+<div class="insta">
+  <h2 class="reveal">Tout dans la pochette</h2>
+  <p class="reveal">Jette un coup d'oeil à mon <a href="https://www.instagram.com/cap.cat.tdlp/" class="link" target="blank">insta</a> pour bien t'en rendre compte !</p>
+  <div class="swiper-container">
+    
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+        <% @instagram.videos.each do |illu| %> 
+          <div class="swiper-slide">
+            <%= cl_video_tag illu.key, autoplay: true, controls: true, muted: true, loop: true %> 
+          </div> 
+        <% end %>
+
+        <% @instagram.images.each do |illu| %> 
+          <div class="swiper-slide">
+            <%= cl_image_tag illu.key %> 
+          </div> 
+        <% end %>
+    </div>
+
+    <!-- If we need pagination -->
+    <!--       <div class="swiper-pagination"></div> -->
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div> 
