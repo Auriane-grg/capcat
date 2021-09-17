@@ -57,7 +57,7 @@
       padding: 0px 50px;
     }
   
-    .swiper-slide img {
+    .swiper-slide img, video {
       transition: box-shadow 0.25s;
       transition-timing-function: ease-in-out;
       transform: scale(0.94);
@@ -197,7 +197,7 @@
       padding: 10px;
     }
   
-    .swiper-slide img {
+    .swiper-slide img, video {
       transition: box-shadow 0.25s;
       transition-timing-function: ease-in-out;
       transform: scale(0.94);
@@ -335,7 +335,7 @@
       padding: 10px;
     }
   
-    .swiper-slide img {
+    .swiper-slide img, video {
       transition: box-shadow 0.25s;
       transition-timing-function: ease-in-out;
       transform: scale(0.94);
